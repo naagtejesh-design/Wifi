@@ -1,0 +1,17 @@
+<WifiScreen>:
+    orientation: 'vertical'
+    padding: 20
+    spacing: 10
+
+    TextInput:
+        id: ssid_input
+        hint_text: "Enter WiFi Name (SSID)"
+
+    TextInput:
+        id: password_input
+        hint_text: "Enter WiFi Password"
+        password: True
+
+    Button:
+        text: "Save WiFi Details"
+        on_release: root.submit()
